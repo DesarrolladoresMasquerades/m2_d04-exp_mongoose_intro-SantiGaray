@@ -3,7 +3,9 @@ const mongoose = require('mongoose');
 mongoose
   //       Atlas link   cats-app-dev is the name of our database
   //            |            |
-  .connect(' XXXXXXX  /cats-app-dev')
+  .connect(
+    "mongodb+srv://SantiGaray:KhaleeFit251034@cluster0.6fts6.mongodb.net/cats-app-dev?retryWrites=true&w=majority"  
+  )
   .then(x =>
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   )
